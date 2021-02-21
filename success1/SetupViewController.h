@@ -1,0 +1,22 @@
+//
+//  SetupControllerViewController.h
+//  success1
+//
+//  Created by Inuyasha on 18/10/2019.
+//  Copyright © 2019 Inuyasha. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+
+
+
+@interface SetupViewController : UIViewController
+
+-(void)setSites:(NSMutableArray *)sites;
+
+@end
+
+NS_ASSUME_NONNULL_END

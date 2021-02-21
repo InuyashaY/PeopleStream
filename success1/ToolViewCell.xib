@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="gTV-IL-0wX" customClass="ToolViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="638" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="638" height="216"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-vA-XQP">
+                        <rect key="frame" x="20" y="18" width="180" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="oeQ-vA-XQP" secondAttribute="height" multiplier="1:1" id="20Y-r8-1Zs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfG-vq-9zh">
+                        <rect key="frame" x="215" y="96.5" width="39" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="1MQ-n1-fxb">
+                        <rect key="frame" x="442" y="20" width="176" height="176"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1MQ-n1-fxb" secondAttribute="height" multiplier="1:1" id="9IF-F4-PEr"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spq-vF-YW6">
+                        <rect key="frame" x="20" y="215" width="598" height="1"/>
+                        <color key="backgroundColor" red="0.95262234918962274" green="0.95262234918962274" blue="0.95262234918962274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0Rt-AW-Oak"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="1MQ-n1-fxb" secondAttribute="trailing" constant="20" id="5kS-Ps-VNr"/>
+                <constraint firstAttribute="trailing" secondItem="spq-vF-YW6" secondAttribute="trailing" constant="20" id="9iw-CF-n0H"/>
+                <constraint firstItem="oeQ-vA-XQP" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" constant="20" id="JdU-Az-5qC"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="oeQ-vA-XQP" secondAttribute="bottom" constant="18" id="Lqn-SH-H1l"/>
+                <constraint firstItem="MfG-vq-9zh" firstAttribute="leading" secondItem="oeQ-vA-XQP" secondAttribute="trailing" constant="15" id="RFh-cd-wBv"/>
+                <constraint firstItem="oeQ-vA-XQP" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" constant="18" id="SV9-LP-CWp"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="1MQ-n1-fxb" secondAttribute="bottom" constant="20" id="T3i-Bq-Ah3"/>
+                <constraint firstItem="MfG-vq-9zh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ig7-i8-xnm"/>
+                <constraint firstItem="spq-vF-YW6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="vyh-nM-gbe"/>
+                <constraint firstItem="1MQ-n1-fxb" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" constant="20" id="yhd-bE-4Jg"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="spq-vF-YW6" secondAttribute="bottom" id="ywH-T3-aVQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="638" height="216"/>
+            <connections>
+                <outlet property="iconImageView" destination="oeQ-vA-XQP" id="PD9-BX-QNK"/>
+                <outlet property="titleLabel" destination="MfG-vq-9zh" id="kgR-6v-0Z4"/>
+            </connections>
+            <point key="canvasLocation" x="510.39999999999998" y="121.4392803598201"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="jiantou" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  success1
+//
+//  Created by Inuyasha on 15/10/2019.
+//  Copyright © 2019 Inuyasha. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Constants.h"
+//#import "Manager/DataManager.h"
+
+
+#endif /* PrefixHeader_pch */
